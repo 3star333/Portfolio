@@ -1,0 +1,14 @@
+#image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#image-container img {
+    max-width: 100%;
+    height: auto;
+    border: 15px solid white; /* Changed to white border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
