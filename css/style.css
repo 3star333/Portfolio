@@ -381,11 +381,13 @@ section {
 .button {
     font-size: 16px;
     margin: 35px 0;
+    width: 333px;
     padding: 11px 16px;
     -webkit-transition: all .3s linear;
     -moz-transition: all .3s linear;
     transition: all .3s linear;
     display: inline-block;
+    text-align: center;
     border-width: 3px;
     border-style: solid;
 }
@@ -502,44 +504,7 @@ section {
 
 /*Navigation Solid*/
 
-#header.nav-solid [class*='col-'] {
-    padding: 0 20px;
-}
 
-#header.nav-solid {
-    background: #fff;
-    box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.2);
-    position: fixed !important;
-    left:0;
-}
-
-#header.nav-solid nav a {
-    border-bottom: 3px solid;
-    border-color: #fff;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-
-#header.nav-solid nav a:hover {
-    opacity: 1;
-}
-
-/* Social Elements when Solid*/
-
-#header.nav-solid .social-icons a {
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-    opacity: 0.5;
-}
-
-#header.nav-solid .social-icons a:hover {
-    opacity: 1;
-    color: #e4473c;
-}
 
 /* Responsive Nav Styling */
 
@@ -1495,6 +1460,50 @@ blockquote {
 /*------------------------------------------------------------------------------------------*/
 /* 7. Footer */
 /*------------------------------------------------------------------------------------------*/
+/* Footer Styling */
+#image-container {
+    display: inline-block;
+    margin-top: 20px; /* Space above the image container */
+    text-align: center; /* Center align image within the container */
+}
+
+#image-container img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Ensure footer is positioned correctly */
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    padding: 15px 30px; /* Adjust padding for more space */
+    font-size: 18px;    /* Increase font size if needed */
+    width: 300px;       /* Set a fixed width */
+    text-align: center; /* Center text inside the button */
+    background-color: #333; /* Button color */
+    color: #fff;        /* Text color */
+    border: none;       /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;    /* Change cursor to pointer */
+    margin-top: 10px;   /* Space above the button */
+    margin-bottom: 20px; /* Space below the button */
+}
+
+/* Container for footer elements */
+#footer > div {
+    display: flex;
+    flex-direction: column; /* Align elements vertically */
+    align-items: center;    /* Center align all items horizontally */
+}
+
+
 
 #landing-footer {
     clear: both;
@@ -2131,9 +2140,7 @@ blockquote {
         padding: 0 15px !important;
     }
 
-    #header.nav-solid [class*="col-"] {
-        padding: 0;
-    }
+   
 
     /*Logo*/
     #logo h2 {
@@ -2232,11 +2239,6 @@ blockquote {
         padding-top:3px;
         padding-right: 5px;
     }
-
-    #header.nav-solid aside {
-        top: 20px;
-    }
-
     #header aside ul {
         margin-top: 0 !important;
         padding-top: 6px;
@@ -2301,9 +2303,7 @@ blockquote {
         padding-right: 5px;
     }
 
-    #header.nav-solid aside {
-        top: 20px;
-    }
+   
 
     #header aside ul {
         margin-top: 0 !important;

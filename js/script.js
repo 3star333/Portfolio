@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const imageContainer = document.getElementById('image-container');
     const generateCatButton = document.getElementById('generate-cat-button');
     const apiKey = 'live_vYwcBEWKMnBGWz02MDPDU9ocCAjA2amvuA1c6ylriSdOjOPy9S5clePqa4UBShy7';
-    const apiEndpoint = 'https://api.thecatapi.com/v1/images/search'; //API endpoint
+    const apiEndpoint = 'https://api.thecatapi.com/v1/images/search'; // API endpoint
 
     generateCatButton.addEventListener('click', function(event) {
         event.preventDefault(); // Prevent the default action of the anchor tag
